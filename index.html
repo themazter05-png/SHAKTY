@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#090806">
+  <meta name="description" content="Invitación pirata de Shakty — 21 años. 17 de octubre de 2026, 5:00 PM.">
+  <meta property="og:title" content="Shakty — 21 años | WANTED">
+  <meta property="og:description" content="Una aventura pirata comienza el 17 de octubre de 2026.">
+  <title>WANTED — Shakty · 21 años</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pirata+One&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="progress"><span id="progressBar"></span></div>
+
+  <!-- PORTADA: coloca assets/images/portada.jpg aquí -->
+  <section id="intro" class="intro-screen">
+    <div class="intro-rays"></div>
+    <div class="intro-content reveal">
+      <div class="skull-stamp">☠</div>
+      <p class="eyebrow">MAR DE LA GRAND LINE · ARCHIVO CONFIDENCIAL</p>
+      <h1>SE BUSCA</h1>
+      <div class="intro-rule"></div>
+      <p class="intro-copy">Una recompensa ha sido anunciada.<br>La tripulación debe abrir este mensaje.</p>
+      <button id="open" class="gold-btn">⚓ ABRIR INVITACIÓN</button>
+      <span class="scroll-hint">TOCA PARA EMBARCAR · ▼</span>
+    </div>
+  </section>
+
+  <main id="main" class="hide">
+    <!-- CARTEL WANTED. IMAGEN: portada.jpg -->
+    <section class="wanted hero-wanted">
+      <div class="wanted-paper">
+        <div class="wanted-top">WANTED</div>
+        <div class="wanted-divider">☠</div>
+        <div class="wanted-photo">
+          <img src="assets/images/portada.jpg" alt="Shakty — imagen de portada" loading="eager">
+          <div class="photo-placeholder">PORTADA<br>WANTED</div>
+          <span class="wanted-seal">DEAD OR<br>ALIVE</span>
+        </div>
+        <h2>SHAKTY</h2>
+        <p class="wanted-sub">LA CAPITANA DE LA AVENTURA</p>
+        <div class="reward">RECOMPENSA <strong>21 AÑOS</strong></div>
+        <p class="wanted-date">17 · OCTUBRE · 2026</p>
+        <button id="startJourney" class="dark-btn">ENTRAR A LA AVENTURA ↓</button>
+      </div>
+    </section>
+
+    <!-- MAPA DE AVENTURA -->
+    <section id="mapa" class="map-section">
+      <div class="map-grid"></div>
+      <div class="compass">N<span>▲</span></div>
+      <div class="route-line"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="map-island island-zoro">⚔<small>ISLA DEL<br>ESPADACHÍN</small></div>
+      <div class="map-island island-chopper">☁<small>ISLA<br>CHOPPER</small></div>
+      <div class="map-island island-party">☠<small>ISLA DE LA<br>CELEBRACIÓN</small></div>
+      <div class="map-ship">⛵</div>
+      <div class="map-copy reveal">
+        <p class="eyebrow ink">MAPA DE AVENTURA</p>
+        <h2>EL TESORO<br>ESTÁ CERCA</h2>
+        <p>Sigue la ruta, reúne a la tripulación y llega al punto marcado.</p>
+        <button id="route" class="gold-btn">⚓ SEGUIR LA RUTA</button>
+      </div>
+    </section>
+
+    <!-- MENSAJE -->
+    <section class="parchment message-section reveal-section">
+      <div class="wax">☠</div>
+      <p class="eyebrow ink">MENSAJE DEL CAPITÁN</p>
+      <h2>¡AHOY, PIRATA!</h2>
+      <p>Has recibido una invitación que no puede ser ignorada.</p>
+      <p>La capitana <strong>Shakty</strong> está a punto de cumplir <strong>21 años</strong> y ha convocado a su tripulación para una noche de aventura, amistad y celebración.</p>
+      <blockquote>“El verdadero tesoro es compartir el viaje con quienes más quieres.”</blockquote>
+      <span class="signature">— Capitana Shakty ⚓</span>
+    </section>
+
+    <!-- ZORO: IMAGEN foto1.jpg -->
+    <section class="character character-zoro reveal-section">
+      <div class="character-copy">
+        <span class="blade-icon">⚔ ⚔ ⚔</span>
+        <p class="eyebrow">CAPÍTULO I · EL ESPADACHÍN</p>
+        <h2>ALMA DE<br><span>GUERRERA</span></h2>
+        <p>Determinación, lealtad y una voluntad que nunca se pierde. Esta parada de la aventura lleva el espíritu del gran espadachín a bordo.</p>
+        <div class="three-blades"><i></i><i></i><i></i></div>
+      </div>
+      <figure class="character-photo tilt-left">
+        <img src="assets/images/foto1.jpg" alt="Foto 1 — sección del espadachín" loading="lazy">
+        <figcaption>ARCHIVO DE LA TRIPULACIÓN · FOTO 01</figcaption>
+      </figure>
+    </section>
+
+    <!-- CHOPPER: IMAGEN foto2.jpg -->
+    <section class="character character-chopper reveal-section">
+      <figure class="character-photo tilt-right">
+        <img src="assets/images/foto2.jpg" alt="Foto 2 — sección de la tripulación" loading="lazy">
+        <figcaption>ARCHIVO DE LA TRIPULACIÓN · FOTO 02</figcaption>
+      </figure>
+      <div class="character-copy">
+        <span class="reindeer-icon">🦌</span>
+        <p class="eyebrow">CAPÍTULO II · EL MÉDICO</p>
+        <h2>CORAZÓN<br><span>AVENTURERO</span></h2>
+        <p>Una parada más tierna, divertida y llena de energía. Porque toda tripulación necesita a alguien que cuide de los suyos.</p>
+        <div class="chopper-badge">☁ NAKAMA ☁</div>
+      </div>
+    </section>
+
+    <!-- CUENTA REGRESIVA -->
+    <section class="countdown reveal-section">
+      <div class="countdown-sparks"></div>
+      <p class="eyebrow">EL RELOJ DE LA AVENTURA</p>
+      <h2>LA CUENTA<br><span>REGRESIVA</span> COMIENZA</h2>
+      <div class="timer" aria-label="Cuenta regresiva">
+        <div><b id="d">00</b><small>DÍAS</small></div>
+        <div><b id="h">00</b><small>HORAS</small></div>
+        <div><b id="m">00</b><small>MINUTOS</small></div>
+        <div><b id="s">00</b><small>SEGUNDOS</small></div>
+      </div>
+    </section>
+
+    <!-- CALENDARIO -->
+    <section class="calendar-section parchment reveal-section">
+      <div class="calendar-card">
+        <div class="calendar-brand">☠ ONE PIECE · GRAND LINE ☠</div>
+        <div class="calendar-head">
+          <span>OCTUBRE</span>
+          <strong>2026</strong>
+        </div>
+        <div class="calendar-week"><span>DOM</span><span>LUN</span><span>MAR</span><span>MIÉ</span><span>JUE</span><span>VIE</span><span>SÁB</span></div>
+        <div class="calendar-days" id="calendarDays"></div>
+        <div class="calendar-selected"><span>17</span><div><b>SÁBADO</b><small>5:00 PM · DÍA DE LA AVENTURA</small></div></div>
+      </div>
+    </section>
+
+    <!-- DATOS -->
+    <section class="details parchment reveal-section">
+      <p class="eyebrow ink">DATOS DE LA MISIÓN</p>
+      <h2>MARCA EL RUMBO</h2>
+      <div class="detail-grid">
+        <article><span>☠</span><b>FECHA</b><strong>17 DE OCTUBRE<br>2026</strong></article>
+        <article><span>⚓</span><b>HORA</b><strong>5:00 PM</strong></article>
+        <article><span>🗺</span><b>DESTINO</b><strong>EL PUERTO<br>DE LA AVENTURA</strong></article>
+      </div>
+      <a class="map-btn" href="https://maps.app.goo.gl/pTybHc658a3wmCdr7" target="_blank" rel="noopener noreferrer">🗺 ABRIR UBICACIÓN EN MAPS</a>
+    </section>
+
+    <!-- VESTIMENTA -->
+    <section class="dress reveal-section">
+      <div class="rope"></div>
+      <p class="eyebrow">CÓDIGO DE VESTIMENTA</p>
+      <h2>¡TODOS A BORDO!</h2>
+      <div class="dress-card"><span>🏴‍☠️</span><b>VEN CARACTERIZADO DE PIRATA</b><p>Sombreros, pañuelos, chalecos, botas, parches y accesorios. Haz que tu llegada parezca sacada de una aventura en alta mar.</p></div>
+      <strong>⚔ Mientras más pirata, mejor ⚔</strong>
+    </section>
+
+    <!-- FOTO 3: cierre de la historia, NO galería -->
+    <section class="final-photo reveal-section">
+      <div class="final-photo-image">
+        <img src="assets/images/foto3.jpg" alt="Foto 3 — cierre de la aventura" loading="lazy">
+        <div class="final-photo-placeholder">FOTO 03<br>CIERRE DE LA AVENTURA</div>
+      </div>
+      <div class="final-photo-copy">
+        <p class="eyebrow">ÚLTIMO CAPÍTULO</p>
+        <h2>EL MEJOR TESORO<br>ES LA TRIPULACIÓN</h2>
+        <p>Guarda este mapa, prepara tu atuendo y no pierdas el rumbo. La próxima gran historia está a punto de comenzar.</p>
+        <div class="coordinates">17° · 10′ · 2026<br><small>SHAKTY · 21</small></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-skull">☠</div>
+      <p class="eyebrow">FIN DEL MAPA · COMIENZO DE LA AVENTURA</p>
+      <h2>¡NOS VEMOS<br>EN EL MAR!</h2>
+      <p>SHAKTY · 21 AÑOS · 17.10.2026 · 5:00 PM</p>
+      <a class="footer-map" href="https://maps.app.goo.gl/pTybHc658a3wmCdr7" target="_blank" rel="noopener noreferrer">⚓ ABRIR MAPA DEL TESORO</a>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
